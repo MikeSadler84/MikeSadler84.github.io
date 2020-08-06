@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>The Fashion Pet</title>
+    <title>Register</title>
 </head>
 <body>
 <div class="wrap">
@@ -22,10 +22,57 @@
             <a href="register.html">Register</a>
         </nav>
     </section>
-
-    <main>
-
+    <div>
+        <h2 class="petRegistration">Pet Registration Form</h2>
+    </div>
+    <main id="main" class="size-wrap">
+        <form action="" class="main">
+            <p>
+                <label for="name">Pet name: </label>
+                <input type="text" name="name" id="petName" placeholder="Pet Name">
+            </p>
+            <p>
+                <label for="age">Pet age: </label>
+                <input type="number" name="age" id="petAge" placeholder="Pet Age">
+            </p>
+            <p>
+                <label for="breed">Pet breed: </label>
+                <input type="text" name="breed" id="petBreed" placeholder="Pet Breed">
+            </p>
+            <p>
+                <label for="type">Pet type: </label>
+                <input type="text" name="type" id="petType" placeholder="Pet Type">
+            </p>
+            <p>
+                <label for="gender">Pet gender: </label>
+                <input type="text" name="gender" id="petGender" placeholder="Pet Gender">
+            </p>
+            <p>
+                <label for="services">Pet services: </label>
+                <select name="services" id="petService">
+                    <option value="" disabled selected> ---- Select a Service ---- </option>
+                    <option value="De-clawing">De-clawing</option>
+                    <option value="Hair cut">Grooming</option>
+                    <option value="Vaccines">Vaccines</option>
+                    <option value="Nail cut">Nail Cutting</option>
+                    <option value="Neuter">Neuter or Spaying</option>
+                    <option value="Full Service">Full Service</option>
+                </select>
+            </p>
+            <p>
+                <label for="ownerName">Owner name: </label>
+                <input type="text" name="ownerName" id="ownerName" placeholder="Owner Name">
+            </p>
+            <p>
+                <label for="phoneNumber">Phone number: </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+            </p>
+            <input type="button" value="Register" onclick="register();">
+        </form>
     </main>
+    <div id="msg">
+
+    </div>
 </div>
     <footer>
         <div id="info">
@@ -34,6 +81,7 @@
         <p>Copyright &copy Mike Sadler 2020</p>
     </footer>
 
-   <script src="js/script.js"></script> 
+   <!-- <script src="js/test2.js"></script>  -->
+   <script src="js/script.js"></script>
 </body>
 </html>

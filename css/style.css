@@ -513,3 +513,44 @@ footer p{
       min-height:calc(100vh - 156px);
     }
 }
+
+/* 
+
+
+Pet Registration
+
+
+*/
+
+#main{
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 2rem;
+    box-shadow: 1px 8px 20px -5px rgb(43, 43, 43);
+    margin-top: 2rem;
+}
+#main input{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+select{
+
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 18.5rem;
+    height: 2.1rem;
+    padding-left: 1rem;
+}
+#main label{
+    display: none;
+}
+.petRegistration{
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
