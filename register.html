@@ -22,11 +22,14 @@
             <a href="register.html">Register</a>
         </nav>
     </section>
-    <div>
-        <h2 class="petRegistration">Pet Registration Form</h2>
+    <div class="petRegistration">
+        <h2>Pet Registration Form</h2>
     </div>
-    <main id="main" class="size-wrap">
+    <main id="main" class="form-size-wrap" class="form-size-mobile-wrap">
         <form action="" class="main">
+            <div class="form-head">
+                <h3>Please fill in all of the information to register your pet.</h3>
+            </div>
             <p>
                 <label for="name">Pet name: </label>
                 <input type="text" name="name" id="petName" placeholder="Pet Name">
@@ -50,7 +53,7 @@
             <p>
                 <label for="services">Pet services: </label>
                 <select name="services" id="petService">
-                    <option value="" disabled selected> ---- Select a Service ---- </option>
+                    <option value="" disabled selected> -------- Select a Service -------- </option>
                     <option value="De-clawing">De-clawing</option>
                     <option value="Hair cut">Grooming</option>
                     <option value="Vaccines">Vaccines</option>
@@ -67,7 +70,9 @@
                 <label for="phoneNumber">Phone number: </label>
                 <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
             </p>
+            <div class="register-button">
             <input type="button" value="Register" onclick="register();">
+            </div>
         </form>
     </main>
     <div id="msg">

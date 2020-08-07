@@ -24,7 +24,7 @@ h1{
     margin-right: auto;
 }
 header{
-    background-color: cyan;
+    background-color: rgb(196, 132, 13);
     background-image: url(../img/paws.png);
     background-size: 32%;
     background-repeat: repeat-x;
@@ -47,7 +47,7 @@ h1{
     text-shadow: 2px 2px black;
 }
 header{
-    background-color: cyan;
+    background-color: rgb(196, 132, 13);
     background-image: url(../img/paws.png);
     background-size: 21%;
     background-repeat: repeat;
@@ -80,7 +80,7 @@ nav{
     }
 }
 .menu a:hover{
-    color: cyan;
+    color: rgb(122, 122, 122);
 }
 .need-groomed-wrap{
     margin-top: 3.5rem;
@@ -106,13 +106,13 @@ nav{
 .mobile-sub-wrap img{
     display: flex;
     border-radius: 50%;
-    border: 5px solid cyan;
+    border: 5px solid rgb(196, 132, 13);
 
 }
 .mobile-wrap img{
     display: flex;
     border-radius: 50%;
-    border: 5px solid cyan;
+    border: 5px solid rgb(196, 132, 13);
 }
 .mobile-wrap{
     display: flex;
@@ -233,6 +233,7 @@ img{
 }
 .need-groomed p{
     font-size: 1.1rem;
+    margin-bottom: -2rem;
 }
 .need-groomed-wrap h3{
     text-align: center;
@@ -244,7 +245,7 @@ img{
     width:250px;
     height:250px;
     border-radius: 50%;
-    border: 5px solid cyan;
+    border: 5px solid rgb(196, 132, 13);
     margin-left: auto;
     margin-right: auto;
 }
@@ -305,7 +306,7 @@ img{
     margin-top: 3.5rem;
     font-size: 2rem;
     margin-bottom: 5rem;
-    background-color: cyan;
+    background-color: rgb(196, 132, 13);
     padding: 2rem 0;
     color:white;
     text-shadow: 1px 2px black;
@@ -473,22 +474,23 @@ img{
 }
 input[type=submit]{
     display: block;
-    background-color: cyan;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    border: 1.5px solid rgb(196, 132, 13);
     padding: 1.5rem;
     border-radius: 1rem;
     font-size: 1.45rem;
     font-weight: 700;
     text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 20px 20px -20px black;
 }
 input[type=submit]:hover{
-    background-color: mediumblue;
-    transition-duration: .3s;
+    background-color: rgb(196, 132, 13);
+    transition-duration: .2s;
+    color: white;
 }
 .footer-info{
     text-align: center;
@@ -523,34 +525,157 @@ Pet Registration
 */
 
 #main{
-    display: flex;
     border: 1px solid lightgray;
-    padding: 2rem;
+    padding: 4rem;
     box-shadow: 1px 8px 20px -5px rgb(43, 43, 43);
     margin-top: 2rem;
+    background-image: none;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: 3% 50%;
+    background-size: 15%;
+
+}
+form{
+    text-align: center;
 }
 #main input{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    padding: .3rem .5rem;
+    width: 18.5rem;
+    border-radius: .4rem;
+    border: 1px solid black;
 }
 select{
-
+    border: 1px solid black;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
     width: 18.5rem;
-    height: 2.1rem;
-    padding-left: 1rem;
+    height: 2.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+    color:  black;
+
 }
 #main label{
     display: none;
 }
 .petRegistration{
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.register-button input[type=button]{
+    
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 3rem;
+    background-color: #f5f5f5;
+
+}
+input[type=button]:hover{
+    background-color: rgb(167, 167, 167);
+    transition-duration: .2s;
+    color: white;
+}
+.form-head h3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+
+
+@media(min-width: 768px){
+#main{
+    border: 1px solid lightgray;
+    padding: 4rem;
+    box-shadow: 1px 8px 20px -5px rgb(43, 43, 43);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background-image: url(../img/pawz.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: 10% 50%;
+    background-size: 15%;
+
+}
+form{
+    text-align: center;
+}
+#main input{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: .3rem .5rem;
+    width: 18.5rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+}
+select{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    width: 18.5rem;
+    height: 2.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+    color:  black;
+
+}
+#main label{
+    display: none;
+}
+.petRegistration{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
     margin-left: .2rem;
     margin-right: .2rem;
+}
+.form-size-wrap{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.register-button input[type=button]{
+    
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 3rem;
+    background-color: #f5f5f5;
+
+}
+input[type=button]:hover{
+    background-color: rgb(167, 167, 167);
+    transition-duration: .2s;
+    color: white;
+}
+.form-head h3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
 }
