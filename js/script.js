@@ -73,25 +73,21 @@ let phonetxt = document.getElementById("phoneNumber");
 // Register function
 
 function register(){
-    //get values from the txt
-    console.log(pettxt.value);
-    console.log(agetxt.value);
-    console.log(breedtxt.value);
-    console.log(typetxt.value);
-    console.log(gendertxt.value);
-    console.log(servicetxt.value);
-    console.log(ownertxt.value);
-    console.log(phonetxt.value);
 
     //create the pet object
     const petNew=new Pet(pettxt.value, agetxt.value, breedtxt.value, typetxt.value, gendertxt.value, servicetxt.value, ownertxt.value, phonetxt.value);
     //push the pet into the array
-    
     salon.pets.push(petNew);
     console.log(salon.pets);
     //clear the input
     clear();
+    //display number of pets
+    numberOfPets();
+    //display the newly registered pet
+    display();
+
 }
+
 function clear(){
     pettxt.value="";
     agetxt.value="";
@@ -103,9 +99,32 @@ function clear(){
     phonetxt.value="";
 }
 console.log(salon.pets);
+
+
+
 //for loop
 
+
+// A function for displaying the number of pets in queue
+
+
+
+function numberOfPets(){
+
+    var pets = salon.pets;
+    const numberOfPets = document.querySelector("#pets-section-header");
+    text=
+    `<div class="pet-section-header">
+    <h2>Pets in queue: ${pets.length}</h2>
+    </div`;
+    numberOfPets.innerHTML= text;
+
+};
+
+numberOfPets();
+
 // A loop to pull just pet names
+
 function petNames(){
 
 let namePet;
@@ -144,11 +163,8 @@ function petAge(){
 }
 let agePet = petAge();
 
-    
 // oldest and youngest pet for practice
 
-let oldPet = Math.max(agePet);
-let youngPet = Math.min(agePet);
 
 // A loop to pull the pets breed
 
