@@ -609,7 +609,7 @@ input[type=button]:hover{
 #main{
     border: 1px solid lightgray;
     padding: 4rem;
-    box-shadow: 1px 8px 20px -5px rgb(43, 43, 43);
+    box-shadow: 1px 8px 10px -5px rgb(43, 43, 43);
     margin-top: 2rem;
     margin-bottom: 3rem;
     background-image: url(../img/pawz.png);
