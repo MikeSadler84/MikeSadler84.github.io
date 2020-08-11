@@ -43,8 +43,13 @@
                 <input type="text" name="breed" id="petBreed" placeholder="Pet Breed">
             </p>
             <p>
-                <label for="type">Pet type: </label>
-                <input type="text" name="type" id="petType" placeholder="Pet Type">
+                <label for="petType">Pet Type: </label>
+                <select name="Pet Type" id="petType">
+                    <option value="" disabled selected> ------------- Pet Type ------------- </option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                </select>
             </p>
             <p>
                 <label for="gender">Pet gender: </label>
@@ -70,16 +75,24 @@
                 <label for="phoneNumber">Phone number: </label>
                 <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
             </p>
+            <p class = "newCustomer">
+                <label for="services">Customer type: </label>
+                <select name="services" id="customerType">
+                    <option value="" disabled selected> -------- Customer Status -------- </option>
+                    <option value="New Customer">New Customer</option>
+                    <option value="Registered">Registered</option>
+                </select>
+            </p>
             <div class="register-button">
             <input type="button" value="Register" onclick="register();">
             </div>
         </form>
     </main>
     <div id="pets-section-header">
-
+        
     </div>
     <section id="pets-section">
-        
+    
 
     </section>
     <div id="msg">
