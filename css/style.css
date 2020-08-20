@@ -72,14 +72,32 @@ nav{
         padding-bottom: 1.5rem;
         padding-top: 1.5rem;
     }
+    nav#menu2{
+        border-bottom: none;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
     .menu a{
         text-decoration: none;
         color: black;
         font-size: 1.3rem;
         padding: 1rem;
     }
+    #menu2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    #menu2 a:hover{
+        color: rgb(122, 122, 122);
+    }
 }
 .menu a:hover{
+    color: rgb(122, 122, 122);
+}
+.menu2 a:hover{
     color: rgb(122, 122, 122);
 }
 .need-groomed-wrap{
@@ -318,6 +336,7 @@ img{
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+
 }
 .service-info2{
     display: block;
@@ -389,21 +408,29 @@ img{
 }
 @media(min-width: 768px){
 .services-title{
-    margin-bottom: 6rem;
+    margin-bottom: .5rem;
     font-size: 2.5rem;
 }
+.button-wrap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .service-info{
-    display: flex;
-    width: 100%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding-left: .5rem;
+    display: block;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .service-info2{
-    display: flex;
-    width: 100%;
-    padding-left: .5rem;
+    display: block;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .service-info h3{
     margin-top: .2rem;
     margin-bottom: .5rem;
@@ -468,20 +495,35 @@ img{
     font-size: 1.2rem;
     font-weight: 400;
 }
+#footer{
+    color: white;
+    padding: 1.5rem 0;
+}
+#footer span{
+    line-height: 2;
+}
 }
 .button{
+
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-input[type=submit]{
+.button a{
+    
     display: block;
-    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    border-radius: 1rem;
     margin-left: auto;
     margin-right: auto;
+
+}
+input[type=submit]{
+    display: block;
     border: 1.5px solid rgb(196, 132, 13);
     padding: 1.5rem;
     border-radius: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
     color: black;
@@ -499,7 +541,6 @@ input[type=submit]:hover{
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
-    line-height: 1.5;
 }
 footer{
     background-color: black;
@@ -514,7 +555,7 @@ footer p{
   }
 @media (min-width: 768px) {
     .wrap {
-      min-height:calc(100vh - 156px);
+      min-height:calc(100vh - 100px);
     }
 }
 
@@ -612,7 +653,7 @@ input[type=button]:hover{
     padding: 4rem;
     box-shadow: 1px 8px 10px -5px rgb(43, 43, 43);
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
     background-image: url(../img/pawz.png);
     background-repeat: repeat-y;
     background-size: contain;
@@ -638,7 +679,7 @@ select{
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     width: 18.5rem;
-    height: 2.2rem;
+    height: 2.5rem;
     padding: .3rem 0;
     border-radius: .4rem;
     color:  black;
@@ -650,7 +691,7 @@ select{
 .petRegistration{
     text-align: center;
     margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     font-size: 2rem;
     margin-left: .2rem;
     margin-right: .2rem;
@@ -734,7 +775,6 @@ img{
         width: 100px;
         height: 100px;
         max-width: 360px;
-        margin-bottom: -7.5rem;
         margin-right: auto;
         margin-left: auto;
     }
@@ -869,7 +909,7 @@ img{
         padding: .5rem;
         background-color: rgb(243, 188, 87);
         margin-left: -3rem;
-        margin-top: -2rem;
+        margin-top: -1.5rem;
     }
     #pets-section{
     
@@ -911,6 +951,33 @@ img{
         margin-right: auto;
         margin-bottom: 1rem;
     }
+    #logo{
+
+        margin-top: 2rem;
+    }
+    .highlight{
+        background-color: rgb(243, 188, 87);
+    }
 
 }
+.bordered{
+    border-bottom: 2px solid rgb(243, 188, 87);
+}
+.table-container{
+    margin-top: 1rem;
+}
 
+.red-BG{
+    background-color: red;
+}
+.form-inline{
+    margin-top: 5rem;
+
+}
+.active{
+    border-left: 3px solid rgb(196, 132, 13);
+}
+#map{
+    width: 500px;
+    height: 500px;
+}
