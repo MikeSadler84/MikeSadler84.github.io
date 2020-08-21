@@ -1,3 +1,4 @@
+
 function init(){
 
     $(".nail-cutting").hide();
@@ -108,6 +109,8 @@ function init(){
     // $("section nav.menu2 a").on("click", function(event){
     //     $(this).addClass("bordered");
     // })
+
+
 }
 
 // when the browser finishes creating DOM elements, call this function

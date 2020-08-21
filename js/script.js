@@ -219,10 +219,10 @@ function searchPet(){
         let selected=pets[i];
         console.log(selected);
         if(selected.petName.toLowerCase() === stringSearch || selected.type.toLowerCase() === stringSearch || selected.service.toLowerCase() === stringSearch){
-            $(`#${selected.id}`).removeClass("active").addClass("active");
+            $(`#${selected.id}`).removeClass("actives").addClass("actives");
         }
         else{
-            $(`#${selected.id}`).removeClass("active");
+            $(`#${selected.id}`).removeClass("actives");
             
         }
     }

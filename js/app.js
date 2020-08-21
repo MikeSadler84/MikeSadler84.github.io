@@ -13,3 +13,6 @@ $(function(){
         $("main").load("../services.html");
     });
 });
+
+document.getElementById("info").innerHTML=`
+<p class="footer-info"> The Fashion Pet<br> 777-777-7777<br> 202 South Lane, Springfield<br> Copyright &copy Mike Sadler 2020</p>`;
