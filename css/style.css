@@ -555,7 +555,7 @@ footer p{
   }
 @media (min-width: 768px) {
     .wrap {
-      min-height:calc(100vh - 100px);
+      min-height:calc(100vh - 176px);
     }
 }
 
@@ -965,6 +965,7 @@ img{
 }
 .table-container{
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .red-BG{
@@ -978,6 +979,9 @@ img{
     border-left: 3px solid rgb(196, 132, 13);
 }
 #map{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(243, 188, 87);
 }
