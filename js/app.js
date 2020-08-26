@@ -4,14 +4,20 @@ $(function(){
     //add main tag on index.html
     //create app.js add click events and the load()
     $("#register").on("click", function(){
-        $("main").load("../register.html");
+        $("main").load("../register.html", function(){
+        if (initRegister) initRegister();
     });
+});
     $("#about").on("click", function(){
-        $("main").load("../about.html");
+        $("main").load("../about.html", function(){
+        if (initAbout) initAbout();
     });
+});
     $("#services").on("click", function(){
-        $("main").load("../services.html");
+        $("main").load("../services.html", function(){
+        if (initServices) initServices();
     });
+});
 });
 
 document.getElementById("info").innerHTML=`

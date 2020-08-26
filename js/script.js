@@ -11,7 +11,7 @@ const salon={
 }
 
 let {name, phone, address:{city,street,number}}= salon;
-
+console.log("script");
 // document.getElementById("info").innerHTML=`
 //     <p class="footer-info"> ${name}<br> ${phone}<br> ${number} ${street}, ${city}`; //template string
 
@@ -109,19 +109,19 @@ Otherwise the prompt is hidden
 
 */
 
-$(function(){
-    "use strict";
+// $(function(){
+//     "use strict";
 
-    $("#hairLength").hide();
+//     $("#hairLength").hide();
 
-    $("#petService").click(function(){
-    if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
-        $("#hairLength").show();
-    }else{
-        $("#hairLength").hide();
-    }
-});
-});
+//     $("#petService").click(function(){
+//     if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
+//         $("#hairLength").show();
+//     }else{
+//         $("#hairLength").hide();
+//     }
+// });
+// });
 
 
 function numberOfPets(){
@@ -165,7 +165,7 @@ function numberOfPets(){
     numberOfPets.innerHTML= text;
   
   }
-  numberOfPets();
+  
 
   // Homework is function searchPet - two different element searches
 
@@ -227,18 +227,19 @@ function searchPet(){
         }
     }
 }
-searchPet();
+
 
 //add pets to array
 // will be called automatically when all the HTML is rendered
-function init(){
-
+function initRegister(){
+    console.log("init register")
     displayTable(scooby);
     displayTable(scrappy);
     displayTable(lady);
     displayTable(tramp);
     displayTable(cali);
-
+    numberOfPets();
+    searchPet();
     $("#register-btn").click(register);
     $("#customerType").keypress(function(e){
         console.log(e.key);
@@ -247,12 +248,21 @@ function init(){
             register();
         }
     });
+    $("#hairLength").hide();
+
+    $("#petService").click(function(){
+    if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
+        $("#hairLength").show();
+    }else{
+        $("#hairLength").hide();
+    }
+});
     
 }
 
 // when the browser finishes creating DOM elements, call this function
 // window.onload = init;
-$(document).ready(()=>init());
+// $(document).ready(()=>initRegister());
 
 
 

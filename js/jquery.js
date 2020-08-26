@@ -1,5 +1,5 @@
 
-function init(){
+function initServices(){
 
     $(".nail-cutting").hide();
     $(".shots").hide();
@@ -115,7 +115,7 @@ function init(){
 
 // when the browser finishes creating DOM elements, call this function
 // window.onload = init;
-$(document).ready(()=>init());
+$(document).ready(()=>initServices());
 
 
 
