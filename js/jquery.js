@@ -95,7 +95,9 @@ function initServices(){
         
     })
     $(".button").on("click", function(){
-        $("main").load("../register.html");
+        $("main").load("../register.html", function(){
+            if (initRegister) initRegister();
+        });
     });
 
     // Delete pets from the registered table
