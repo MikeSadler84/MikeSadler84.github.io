@@ -117,7 +117,7 @@ function initServices(){
 
 // when the browser finishes creating DOM elements, call this function
 // window.onload = init;
-$(document).ready(()=>initServices());
+// $(document).ready(()=>initServices());
 
 
 

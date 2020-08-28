@@ -58,23 +58,31 @@ console.log(salon.pets.length);
 
 //register function and use ids
 
-let pettxt = document.getElementById("petName");
-let agetxt = document.getElementById("petAge");
-let breedtxt = document.getElementById("petBreed");
-let typetxt = document.getElementById("petType");
-let gendertxt = document.getElementById("petGender");
-let servicetxt = document.getElementById("petService");
-let hairtxt = document.getElementById("hairLength");
-let ownertxt = document.getElementById("ownerName");
-let phonetxt = document.getElementById("phoneNumber");
-let customertxt = document.getElementById("customerType");
+
+/*
+
+The below commented code was stopping the register from working. 
+Using JQuery instead fixed the issues
+
+*/
+
+// let pettxt = document.getElementById("petName");
+// let agetxt = document.getElementById("petAge");
+// let breedtxt = document.getElementById("petBreed");
+// let typetxt = document.getElementById("petType");
+// let gendertxt = document.getElementById("petGender");
+// let servicetxt = document.getElementById("petService");
+// let hairtxt = document.getElementById("hairLength");
+// let ownertxt = document.getElementById("ownerName");
+// let phonetxt = document.getElementById("phoneNumber");
+// let customertxt = document.getElementById("customerType");
 
 // Register function
 
 function register(){
 
     //create the pet object
-    const petNew=new Pet(pettxt.value, agetxt.value, breedtxt.value, typetxt.value, gendertxt.value, servicetxt.value, hairtxt.value, ownertxt.value, phonetxt.value, customertxt.value);
+    const petNew=new Pet($("#petName").val(), $("#petAge").val(), $("#petBreed").val(), $("#petType").val(), $("#petGender").val(), $("#petService").val(), $("#hairLength").val(), $("#ownerName").val(), $("#phoneNumber").val(), $("#customerType").val());
     //push the pet into the array
     salon.pets.push(petNew);
     console.log(salon.pets);
@@ -88,16 +96,16 @@ function register(){
 }
 
 function clear(){
-    pettxt.value="";
-    agetxt.value="";
-    breedtxt.value="";
-    typetxt.value="";
-    gendertxt.value="";
-    servicetxt.value="";
-    hairtxt.value="";
-    ownertxt.value="";
-    phonetxt.value="";
-    customertxt.value="";
+    $("#petName").val("");
+    $("#petAge").val("");
+    $("#petBreed").val("");
+    $("#petType").val("");
+    $("#petGender").val("");
+    $("#petService").val("");
+    $("#hairLength").val("");
+    $("#ownerName").val("");
+    $("#phoneNumber").val("");
+    $("#customerType").val("");
 }
 
 /*
@@ -170,7 +178,6 @@ function numberOfPets(){
   // Homework is function searchPet - two different element searches
 
 
-
 function displayTable(aPet){
     let tbody=document.getElementById("petTable");
     let row=`<tr id="${aPet.id}">
@@ -188,6 +195,7 @@ function displayTable(aPet){
             </tr>`;
     tbody.innerHTML+=row;
     numberOfPets();
+    
 }
 
 
